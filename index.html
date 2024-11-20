@@ -100,22 +100,264 @@
                     <h2 style="font-weight: bold; margin-bottom: 5px;">Daniel Char</h2>
                     <p style="margin-bottom: 20px; color: #666;">Principal Broker</p>
 
-                    <p><strong style="color:#666;">Office:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="#" style="color: #009fc8; text-decoration: none;">Metal
-                            Mortgage</a></p>
-                            <hr>
-                    <p><strong style="color:#666;">Phone:</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:6477489010"
-                            style="color: #009fc8; text-decoration: none;">647.748.9010</a></p>
-                            <hr>
-                    <p><strong style="color:#666;">Email:</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:daniel@metalmortgage.ca"
+                    <p><strong
+                            style="color:#666;">Office:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="#" style="color: #009fc8; text-decoration: none;">Metal
+                            Mortgage</a>
+                    </p>
+                    <hr>
+                    <p><strong style="color:#666;">Phone:</strong>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                            href="tel:6477489010" style="color: #009fc8; text-decoration: none;">647.748.9010</a></p>
+                    <hr>
+                    <p><strong style="color:#666;">Email:</strong>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
+                            href="mailto:daniel@metalmortgage.ca"
                             style="color: #202020; text-decoration: none;">daniel@metalmortgage.ca</a></p>
-                            <hr>
-                    <p><strong style="color:#666;">Address:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 38 Iannuzzi Street, Toronto, Ontario</p>
+                    <hr>
+                    <p><strong
+                            style="color:#666;">Address:</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        38 Iannuzzi Street, Toronto, Ontario</p>
                 </div>
 
             </div>
         </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2">
+                <ul class="list-group">
+                    <li class="list-group-item bg-dark">
+                        <a href="javascript:void(0);" class="text-light text-decoration-none"
+                            onclick="showCallbackForm()">ARRANGE A CALL BACK</a>
+                    </li>
+                    <li class="list-group-item bg-dark text-light">
+                        <a href="javascript:void(0);" class="text-light text-decoration-none"
+                            onclick="showContactInfo()">CONTACT ME</a>
+                    </li>
+
+                    <!-- Calculators with Dropdown -->
+                    <li class="list-group-item bg-dark text-light d-flex justify-content-between align-items-center">
+                        <a href="javascript:void(0);" class="text-light text-decoration-none"
+                            onclick="toggleDropdown('calculatorsDropdown')">CALCULATORS</a>
+                        <span class="badge bg-light text-dark" onclick="toggleDropdown('calculatorsDropdown')">+</span>
+                    </li>
+                    <ul id="calculatorsDropdown" class="list-group" style="display: none; margin-top: 5px;">
+                        <li class="list-group-item bg-secondary text-light hover-item">
+                            <a href="#" class="text-light text-decoration-none">Mortgage Calculator</a>
+                        </li>
+                        <li class="list-group-item bg-secondary text-light hover-item">
+                            <a href="#" class="text-light text-decoration-none">Mortgage Payoff</a>
+                        </li>
+                        <li class="list-group-item bg-secondary text-light hover-item">
+                            <a href="#" class="text-light text-decoration-none">Compare Mortgage</a>
+                        </li>
+                    </ul>
+
+                    <!-- Documents with Dropdown -->
+                    <li class="list-group-item bg-dark text-light d-flex justify-content-between align-items-center">
+                        <a href="javascript:void(0);" class="text-light text-decoration-none"
+                            onclick="toggleDropdown('documentsDropdown')">DOCUMENTS</a>
+                        <span class="badge bg-light text-dark" onclick="toggleDropdown('documentsDropdown')">+</span>
+                    </li>
+                    <ul id="documentsDropdown" class="list-group" style="display: none; margin-top: 5px;">
+                        <li class="list-group-item bg-secondary text-light hover-item">
+                            <a href="#" class="text-light text-decoration-none">Application Form</a>
+                        </li>
+                        <li class="list-group-item bg-secondary text-light hover-item">
+                            <a href="#" class="text-light text-decoration-none">Renewing and Renegotiating Your
+                                Mortgage</a>
+                        </li>
+                        <li class="list-group-item bg-secondary text-light hover-item">
+                            <a href="#" class="text-light text-decoration-none">Borrowing on Home Equity</a>
+                        </li>
+                        <li class="list-group-item bg-secondary text-light hover-item">
+                            <a href="#" class="text-light text-decoration-none">Paying Off Your Mortgage Faster</a>
+                        </li>
+                        <li class="list-group-item bg-secondary text-light hover-item">
+                            <a href="#" class="text-light text-decoration-none">Home Buying Step by Step</a>
+                        </li>
+                        <li class="list-group-item bg-secondary text-light hover-item">
+                            <a href="#" class="text-light text-decoration-none">Buying Your First Home</a>
+                        </li>
+                    </ul>
+                </ul>
+            </div>
+
+            <!-- Right Section -->
+            <div class="col-md-10">
+                <!-- Callback Form -->
+                <div id="callbackForm"
+                    style="display: none; padding: 20px; background-color: #f8f9fa; border-radius: 5px;">
+                    <p style="margin-bottom: 20px; color: #666;">Please complete the below form.</p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="title" class="form-label">Title</label>
+                            <select id="title" class="form-select">
+                                <option>Please Select</option>
+                                <option>Mr.</option>
+                                <option>Ms.</option>
+                                <option>Mrs.</option>
+                                <option>Miss.</option>
+                                <option>Dr.</option>
+                                <option>Professor.</option>
+                                <option>Rev.</option>
+                                <option>Judge.</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="firstName" class="form-label">First Name</label>
+                            <input type="text" id="firstName" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="middleName" class="form-label">Middle Name</label>
+                            <input type="text" id="middleName" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="lastName" class="form-label">Last Name</label>
+                            <input type="text" id="lastName" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="homePhone" class="form-label">Home Phone</label>
+                            <input type="text" id="homePhone" class="form-control">
+                        </div>
+                        <div class="mb-3">
+                            <label for="loanPurpose" class="form-label">Loan Purpose</label>
+                            <select id="loanPurpose" class="form-select">
+                                <option>Please Select</option>
+                                <option>Purchase</option>
+                                <option>Pre-Approval</option>
+                                <option>Refinance</option>
+                                <option>Switch</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="amount" class="form-label">Amount</label>
+                            <div class="input-group">
+                                <span class="input-group-text">$</span>
+                                <input type="text" id="amount" class="form-control" placeholder="Enter amount">
+                            </div>
+                        </div>
+                        <br><br>
+                        <p style="margin-bottom: 20px; color: #666; font-size: x-small;">By submitting this application
+                            form you warrant and
+                            confirm that the information given is
+                            true and correct and that you understand it is being sent to VERICO and Daniel Char and used
+                            for the purpose of processing your requested transaction. You also hereby consent to the use
+                            of this information by all companies listed as suppliers on www.mortgageweb.ca and that each
+                            supplier may receive a copy of the information you provide for the purposes of providing
+                            their product or services to you. Each supplier hereby confirms to you that once they are in
+                            possession of the your information the supplier shall strictly adhere to all personal
+                            information privacy protection laws in Canada.
+                        </p>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="terms">
+                            <label class="form-check-label" for="terms">
+                                I agree to the Terms of Service and Privacy Policy
+                            </label>
+                        </div>
+                        <button type="submit" class="btn btn-dark mt-3 p-3">Submit</button>
+                    </form>
+                </div>
+
+                <div id="contactInfo"
+                    style="display: none; padding: 20px; background-color: #f8f9fa; border-radius: 5px;">
+                    <h3>Contact Information</h3>
+                    <p><strong style="color:#666;">Daniel Char</strong></p>
+                    <p><a href="#" style="color: #009fc8;">Metal Mortgage</a></p>
+                    <p><strong style="color:#666;">Phone:</strong> <a href="tel:6477489010"
+                            style="color: #009fc8;">647.748.9010</a></p>
+                    <p><strong style="color:#666;">Email:</strong> <a href="mailto:daniel@metalmortgage.ca"
+                            style="color: #009fc8;">daniel@metalmortgage.ca</a></p>
+                    <p><strong style="color:#666;">Address:</strong> 38 Iannuzzi Street, Toronto, Ontario</p>
+
+                    <!-- Embedded Google Map -->
+                    <div style="margin-top: 20px;">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.443281132872!2d-79.39968478413856!3d43.6390920791217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34d41b170cc5%3A0x75664ea10f98e4dd!2s38%20Iannuzzi%20St%2C%20Toronto%2C%20ON%20M5V%200S2%2C%20Canada!5e0!3m2!1sen!2sus!4v1697038596824!5m2!1sen!2sus"
+                            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="lenders-section">
+        <div class="lenders-header d-flex align-items-center">
+            <h4 class="text-uppercase me-3">My Lenders</h4>
+            <div class="navigation-dots">
+                <span class="dot active" onclick="showImages(1)">1</span>
+                <span class="dot" onclick="showImages(2)">2</span>
+                <span class="dot" onclick="showImages(3)">3</span>
+                <span class="dot" onclick="showImages(4)">4</span>
+            </div>
+        </div>
+
+
+        <!-- Image Containers -->
+        <div id="images-1" class="lender-logos active">
+            <img src="../metal-mortage/assets/sponser-1.png" alt="Scotiabank">
+            <img src="../metal-mortage/assets/sponser-2.png" alt="TD Bank">
+            <img src="../metal-mortage/assets/sponser-3.png" alt="MERIX">
+            <img src="../metal-mortage/assets/sponser-4.png" alt="EQ Bank">
+        </div>
+        <div id="images-2" class="lender-logos">
+            <img src="../metal-mortage/assets/communitytrust.png" alt="Equitable Bank">
+            <img src="../metal-mortage/assets/icicibank.png" alt="MCAP">
+            <img src="../metal-mortage/assets/sponser-2.png" alt="TD Bank">
+            <img src="../metal-mortage/assets/cmls.png" alt="EQ Bank">
+        </div>
+        <div id="images-3" class="lender-logos">
+            <img src="../metal-mortage/assets/sponser-1.png" alt="Scotiabank">
+            <img src="../metal-mortage/assets/sponser-2.png" alt="TD Bank">
+            <img src="../metal-mortage/assets/cmi.png" alt="First National">
+            <img src="../metal-mortage/assets/cmls.png" alt="EQ Bank">
+        </div>
+        <div id="images-4" class="lender-logos">
+            <img src="../metal-mortage/assets/communitytrust.png" alt="Equitable Bank">
+            <img src="../metal-mortage/assets/sponser-2.png" alt="TD Bank">
+            <img src="../metal-mortage/assets/icicibank.png" alt="MERIX">
+            <img src="../metal-mortage/assets/cmls.png" alt="EQ Bank">
+        </div>
+        <hr>
+        <!-- Contact Text -->
+        <p class="contact-text d-flex justify-content-start mx-2">
+            <a href="#" class="contact-link">CONTACT ME</a>&nbsp; today to find out how <strong>I can HELP YOU
+                SAVE.</strong>
+        </p>
+    </div>
+
+    <footer class="footer-section d-flex justify-content-between align-items-center">
+        <!-- Left Section: Logo -->
+        <div class="footer-logo">
+            <img src="../metal-mortage/assets/metal-mortage.png" alt="Metal Mortgage Logo" class="img-fluid">
+        </div>
+
+        <!-- Right Section: Verico and Links -->
+        <div class="footer-right">
+            <p class="mb-2"><span class="d-flex justify-content-start align-items-center">Proud member of</span> <br><strong><img src="../metal-mortage/assets/Logo_Verico_Retina.png" alt=""></strong></p>
+            <div class="footer-links">
+                <a href="#" class="footer-link">Privacy Policy</a> |
+                <a href="#" class="footer-link">Politique de confidentialité</a>
+            </div>
+            <p class="footer-note mt-2">
+                Each member is an independently owned and operated mortgage brokerage. <br>
+                Copyright © Verico Financial Group Inc. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+
 
 
 </body>
+<script src="./index.js"></script>
 
 </html>
