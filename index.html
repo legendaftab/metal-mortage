@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Metal Mortgage</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
 </head>
+
 <body>
-    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <!-- Language Selector Dropdown -->
+            <div class="dropdown me-3">
+                <button class="btn btn-outline-light dropdown-toggle" type="button" id="languageDropdown"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://www.gstatic.com/images/icons/material/system/1x/language_black_20dp.png"
+                        alt="Google" style="width: 20px; height: 20px; margin-right: 5px;" />
+                    Select Language
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                    <li><a class="dropdown-item" href="#">Chinese (Simplified)</a></li>
+                    <li><a class="dropdown-item" href="#">Chinese (Traditional)</a></li>
+                    <li><a class="dropdown-item" href="#">French</a></li>
+                    <li><a class="dropdown-item" href="#">Hindi</a></li>
+                    <li><a class="dropdown-item" href="#">Japanese</a></li>
+                    <li><a class="dropdown-item" href="#">Korean</a></li>
+                    <li><a class="dropdown-item" href="#">Spanish</a></li>
+                </ul>
+            </div>
+
+            <!-- Navbar Toggler -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Navbar Content -->
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Team <i class="fas fa-users"></i></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Contact Me <i class="fas fa-envelope"></i></a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <button class="btn btn-outline-light" type="button">
+                        Apply Now <i class="fas fa-edit"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
 </body>
+
 </html>
