@@ -487,4 +487,36 @@
     margin-top: 20px;
   }
 
+/* CHECK */
+.list-group-item {
+    border: none;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.list-group-item:hover {
+    background-color: #495057; /* Darker hover background */
+}
+
+.list-item-link {
+    display: block;
+    transition: color 0.3s ease;
+}
+
+.list-item-link:hover {
+    color: #f8f9fa; /* White text on hover */
+}
+
+.hover-item {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hover-item:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+  
 
