@@ -139,22 +139,17 @@
 }
 
 .list-group-item:hover {
-    /* background-color: #333; */
     background-color: #000;
 }
 
 #calculatorsDropdown li {
     padding-left: 30px;
-    /* Indent for nested items */
 }
 
 .hover-item:hover {
-    /* background-color: #fff !important;  */
     background-color: #000;
     color: #000 !important;
-    /* Black text on hover */
     transition: all 0.3s ease-in-out;
-    /* Smooth transition for hover effect */
 }
 
 /* Ensure dropdown items are styled properly */
@@ -167,13 +162,11 @@
 
 .list-group-item:hover {
     background-color: #000;
-    /* Slight hover effect for main list items */
 }
 
 /* Dropdown list items */
 #calculatorsDropdown li {
     padding-left: 30px;
-    /* Indentation for dropdown items */
 }
 
 .list-group-item {
@@ -185,40 +178,34 @@
 
 .list-group-item:hover {
     background-color: #000;
-    /* Slight hover effect for main list items */
     color: #fff !important;
-    /* White text on hover */
 }
 
 /* Dropdown list items */
 #calculatorsDropdown li,
 #documentsDropdown li {
     padding-left: 30px;
-    /* Indentation for dropdown items */
     background-color: #000 !important;
-    /* Default background for dropdown items */
     color: #fff !important;
-    /* Default text color */
     border-bottom: 1px solid #444;
-    /* Optional border for separation */
 }
 
 /* Hover effect for dropdown items */
 #calculatorsDropdown li:hover,
 #documentsDropdown li:hover {
     background-color: #fff !important;
-    /* White background on hover */
+ 
     color: #000 !important;
     /* Black text on hover */
     transition: all 0.3s ease-in-out;
-    /* Smooth transition for hover */
+    
 }
 
 /* Styling for the dropdown container */
 .bg-secondary {
     background-color: #000 !important;
     color: #fff !important;
-    /* Dark gray background */
+
 }
 
 .badge {
@@ -325,7 +312,7 @@
   }
 
   .lender-logos {
-    display: none; /* Initially hide all image containers */
+    display: none; 
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
@@ -333,7 +320,7 @@
   }
 
   .lender-logos.active {
-    display: flex; /* Show only the active container */
+    display: flex; 
   }
 
   .lender-logos img {
@@ -388,19 +375,19 @@
     text-align: center;
     font-size: 14px;
     font-weight: bold;
-    background-color: #ccc; /* Default background color */
-    color: #000; /* Default text color */
+    background-color: #ccc; 
+    color: #000; 
     cursor: pointer;
     transition: all 0.3s ease-in-out;
   }
 
   .dot.active {
-    background-color: #000; /* Black background for active */
-    color: #fff; /* White text for active */
+    background-color: #000; 
+    color: #fff;
   }
 
   .dot:hover {
-    background-color: #333; /* Darker gray on hover */
+    background-color: #333; 
     color: #fff;
   }
 
@@ -497,7 +484,7 @@
 }
 
 .list-group-item:hover {
-    background-color: #495057; /* Darker hover background */
+    background-color: #495057; 
 }
 
 .list-item-link {
@@ -506,7 +493,7 @@
 }
 
 .list-item-link:hover {
-    color: #f8f9fa; /* White text on hover */
+    color: #f8f9fa;
 }
 
 .hover-item {

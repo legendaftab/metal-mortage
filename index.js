@@ -49,11 +49,7 @@ function hideForms() {
     document.getElementById('teamSection').style.display = 'none';
     document.getElementById('homeSection').style.display = 'none';
     document.getElementById('aboutSection').style.display = 'none';
-
-    // Clear YouTube video src to stop playback
     document.getElementById('youtubeVideo').src = "";
-
-    // Hide dropdowns
     document.getElementById('calculatorsDropdown').style.display = 'none';
     document.getElementById('documentsDropdown').style.display = 'none';
 }
