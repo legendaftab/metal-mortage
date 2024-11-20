@@ -1,0 +1,79 @@
+.navbar-nav .nav-link {
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+  }
+
+  .navbar-nav .nav-link:hover {
+    background-color: white; 
+    color: black!important;
+  }
+
+  .navbar-nav .nav-link i {
+    transition: color 0.3s;
+  }
+
+  .navbar-nav .nav-link:hover i {
+    color: black; 
+  }
+
+  /* slider images */
+  .image-slider {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  /* Slider images */
+  .image-slider {
+    position: relative;
+    width: 100%; /* Full width */
+    height: 300px; /* Set height according to your design */
+    overflow: hidden; /* Hide overflowing images */
+  }
+
+  /* All slider images */
+  .slider-img {
+    position: absolute; /* Stack images on top of each other */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensure images are responsive */
+    height: 100%; /* Stretch images to container height */
+    object-fit: cover; /* Ensure the image fills the container */
+    opacity: 0; /* Initially hide all images */
+    animation: sliderAnimation 6s infinite; /* 6s for three images, looping */
+  }
+
+  /* Image 1 - Starts immediately */
+  .slider-img:nth-child(1) {
+    animation-delay: 0s;
+  }
+
+  /* Image 2 - Delayed by 2 seconds */
+  .slider-img:nth-child(2) {
+    animation-delay: 2s;
+  }
+
+  /* Image 3 - Delayed by 4 seconds */
+  .slider-img:nth-child(3) {
+    animation-delay: 4s;
+  }
+
+  /* Keyframes for fading images in and out */
+  @keyframes sliderAnimation {
+    0% {
+      opacity: 0;
+    }
+    10% {
+      opacity: 1; /* Fade in */
+    }
+    30% {
+      opacity: 1; /* Stay visible */
+    }
+    40% {
+      opacity: 0; /* Fade out */
+    }
+    100% {
+      opacity: 0; /* Remain hidden until next cycle */
+    }
+  }
