@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
             <!-- Language Selector Dropdown -->
             <div class="dropdown me-3">
@@ -84,13 +84,25 @@
             <div class="col-md-2 text-center">
                 <img src="../metal-mortage/assets/metal-mortage.png" alt="Metal Mortgage Logo" class="img-fluid"
                     style="max-width: 100%;">
+                <div class="d-flex">
+                    <button
+                        class="btn btn-outline-light bg-dark p-3 m-4 d-flex justify-content-center align-items-center"
+                        type="button">
+                        Apply Now <i class="fas fa-edit"></i>
+                    </button>
+                </div>
             </div>
+
             <div class="col-md-10 d-flex align-items-center">
                 <div class="image-slider">
                     <img src="../metal-mortage/assets/web-1.png" alt="Web 1" class="img-fluid slider-img">
                     <img src="../metal-mortage/assets/web-2.png" alt="Web 2" class="img-fluid slider-img">
                     <img src="../metal-mortage/assets/web-3.png" alt="Web 3" class="img-fluid slider-img">
                 </div>
+
+                <!-- check all  -->
+
+
             </div>
 
         </div>
@@ -100,6 +112,65 @@
             <div class="col-md-2 text-center">
                 <img src="../metal-mortage/assets/mortage-web.png" alt="Metal Mortgage Logo" class="img-fluid"
                     style="max-width: 100%;">
+
+                <!-- all dropdown check-->
+                <ul class="list-group" class="mt-4">
+                    <li class="list-group-item bg-dark">
+                        <a href="javascript:void(0);" class="text-light text-decoration-none"
+                            onclick="showCallbackForm()">ARRANGE A CALL BACK</a>
+                    </li>
+                    <li class="list-group-item bg-dark text-light">
+                        <a href="javascript:void(0);" class="text-light text-decoration-none"
+                            onclick="showContactInfo()">CONTACT ME</a>
+                    </li>
+
+                    <!-- Calculators with Dropdown -->
+                    <li class="list-group-item bg-dark text-light d-flex justify-content-between align-items-center">
+                        <a href="javascript:void(0);" class="text-light text-decoration-none"
+                            onclick="toggleDropdown('calculatorsDropdown')">CALCULATORS</a>
+                        <span class="badge bg-light text-dark" onclick="toggleDropdown('calculatorsDropdown')">+</span>
+                    </li>
+                    <ul id="calculatorsDropdown" class="list-group" style="display: none; margin-top: 5px;">
+                        <li class="list-group-item bg-secondary text-light hover-item">
+                            <a href="#" class="text-light text-decoration-none">Mortgage Calculator</a>
+                        </li>
+                        <li class="list-group-item bg-secondary text-light hover-item">
+                            <a href="#" class="text-light text-decoration-none">Mortgage Payoff</a>
+                        </li>
+                        <li class="list-group-item bg-secondary text-light hover-item">
+                            <a href="#" class="text-light text-decoration-none">Compare Mortgage</a>
+                        </li>
+                    </ul>
+
+                    <!-- Documents with Dropdown -->
+                    <li class="list-group-item bg-dark text-light d-flex justify-content-between align-items-center">
+                        <a href="javascript:void(0);" class="text-light text-decoration-none"
+                            onclick="toggleDropdown('documentsDropdown')">DOCUMENTS</a>
+                        <span class="badge bg-light text-dark" onclick="toggleDropdown('documentsDropdown')">+</span>
+                    </li>
+                    <ul id="documentsDropdown" class="list-group" style="display: none; margin-top: 5px;">
+                        <li class="list-group-item bg-secondary text-light hover-item">
+                            <a href="#" class="text-light text-decoration-none">Application Form</a>
+                        </li>
+                        <li class="list-group-item bg-secondary text-light hover-item">
+                            <a href="#" class="text-light text-decoration-none">Renewing and Renegotiating Your
+                                Mortgage</a>
+                        </li>
+                        <li class="list-group-item bg-secondary text-light hover-item">
+                            <a href="#" class="text-light text-decoration-none">Borrowing on Home Equity</a>
+                        </li>
+                        <li class="list-group-item bg-secondary text-light hover-item">
+                            <a href="#" class="text-light text-decoration-none">Paying Off Your Mortgage Faster</a>
+                        </li>
+                        <li class="list-group-item bg-secondary text-light hover-item">
+                            <a href="#" class="text-light text-decoration-none">Home Buying Step by Step</a>
+                        </li>
+                        <li class="list-group-item bg-secondary text-light hover-item">
+                            <a href="#" class="text-light text-decoration-none">Buying Your First Home</a>
+                        </li>
+                    </ul>
+                </ul>
+
             </div>
             <div class="col-md-10">
                 <div style="padding: 20px; background-color: #f8f9fa; border-radius: 5px;">
@@ -240,77 +311,10 @@
                 </div>
 
                 <!-- About Section -->
-                <div id="aboutSection"  style="display: none;">
+                <div id="aboutSection" style="display: none;">
                 </div>
-            </div>
-        </div>
-    </div>
 
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-2">
-                <ul class="list-group" class="sticky-top">
-                    <li class="list-group-item bg-dark">
-                        <a href="javascript:void(0);" class="text-light text-decoration-none"
-                            onclick="showCallbackForm()">ARRANGE A CALL BACK</a>
-                    </li>
-                    <li class="list-group-item bg-dark text-light">
-                        <a href="javascript:void(0);" class="text-light text-decoration-none"
-                            onclick="showContactInfo()">CONTACT ME</a>
-                    </li>
-
-                    <!-- Calculators with Dropdown -->
-                    <li class="list-group-item bg-dark text-light d-flex justify-content-between align-items-center">
-                        <a href="javascript:void(0);" class="text-light text-decoration-none"
-                            onclick="toggleDropdown('calculatorsDropdown')">CALCULATORS</a>
-                        <span class="badge bg-light text-dark" onclick="toggleDropdown('calculatorsDropdown')">+</span>
-                    </li>
-                    <ul id="calculatorsDropdown" class="list-group" style="display: none; margin-top: 5px;">
-                        <li class="list-group-item bg-secondary text-light hover-item">
-                            <a href="#" class="text-light text-decoration-none">Mortgage Calculator</a>
-                        </li>
-                        <li class="list-group-item bg-secondary text-light hover-item">
-                            <a href="#" class="text-light text-decoration-none">Mortgage Payoff</a>
-                        </li>
-                        <li class="list-group-item bg-secondary text-light hover-item">
-                            <a href="#" class="text-light text-decoration-none">Compare Mortgage</a>
-                        </li>
-                    </ul>
-
-                    <!-- Documents with Dropdown -->
-                    <li class="list-group-item bg-dark text-light d-flex justify-content-between align-items-center">
-                        <a href="javascript:void(0);" class="text-light text-decoration-none"
-                            onclick="toggleDropdown('documentsDropdown')">DOCUMENTS</a>
-                        <span class="badge bg-light text-dark" onclick="toggleDropdown('documentsDropdown')">+</span>
-                    </li>
-                    <ul id="documentsDropdown" class="list-group" style="display: none; margin-top: 5px;">
-                        <li class="list-group-item bg-secondary text-light hover-item">
-                            <a href="#" class="text-light text-decoration-none">Application Form</a>
-                        </li>
-                        <li class="list-group-item bg-secondary text-light hover-item">
-                            <a href="#" class="text-light text-decoration-none">Renewing and Renegotiating Your
-                                Mortgage</a>
-                        </li>
-                        <li class="list-group-item bg-secondary text-light hover-item">
-                            <a href="#" class="text-light text-decoration-none">Borrowing on Home Equity</a>
-                        </li>
-                        <li class="list-group-item bg-secondary text-light hover-item">
-                            <a href="#" class="text-light text-decoration-none">Paying Off Your Mortgage Faster</a>
-                        </li>
-                        <li class="list-group-item bg-secondary text-light hover-item">
-                            <a href="#" class="text-light text-decoration-none">Home Buying Step by Step</a>
-                        </li>
-                        <li class="list-group-item bg-secondary text-light hover-item">
-                            <a href="#" class="text-light text-decoration-none">Buying Your First Home</a>
-                        </li>
-                    </ul>
-                </ul>
-            </div>
-
-            <!-- Right Section -->
-            <div class="col-md-10">
-                <!-- Callback Form -->
+                <!-- check 2 -->
                 <div id="callbackForm"
                     style="display: none; padding: 20px; background-color: #f8f9fa; border-radius: 5px;">
                     <p style="margin-bottom: 20px; color: #666;">Please complete the below form.</p>
@@ -411,7 +415,8 @@
             </div>
         </div>
     </div>
-    </div>
+    <!-- remove from 418  understood -->
+
     <div class="lenders-section">
         <div class="lenders-header d-flex align-items-center">
             <h4 class="text-uppercase me-3">My Lenders</h4>

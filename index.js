@@ -1,26 +1,26 @@
 function showHomeSection() {
     hideForms();
     document.getElementById('homeSection').style.display = 'block';
-    history.pushState(null, null, 'index.html/home');
+    history.pushState(null, null, '/home');
 }
 
 function showAboutSection() {
     hideForms();
     document.getElementById('aboutSection').style.display = 'block';
-    history.pushState(null, null, 'index.html/about');
+    history.pushState(null, null, '/about');
 }
 
 function showServicesSection() {
     hideForms();
     document.getElementById('servicesSection').style.display = 'block';
-    history.pushState(null, null, 'index.html/services');
+    history.pushState(null, null, '/services');
 }
 
 function showVideoSection() {
     hideForms();
     document.getElementById('videoSection').style.display = 'block';
     document.getElementById('youtubeVideo').src = "https://www.youtube.com/embed/WE_EgwFRils?si=0b9zW-glDwLNIRrj";
-    history.pushState(null, null, 'index.html/video');
+    history.pushState(null, null, '/video');
 }
 
 function toggleDropdown(dropdownId) {
@@ -38,7 +38,7 @@ function showCallbackForm() {
 function showContactInfo() {
     hideForms();
     document.getElementById('contactInfo').style.display = 'block';
-    history.pushState(null, null, 'index.html/contact');
+    history.pushState(null, null, '/contact');
 }
 
 function hideForms() {
@@ -62,7 +62,7 @@ function hideForms() {
 function showTeamSection() {
     hideForms();
     document.getElementById('teamSection').style.display = 'block';
-    history.pushState(null, null, 'index.html/team');
+    history.pushState(null, null, '/team');
 }
 function showImages(dotNumber) {
     const imageContainers = document.querySelectorAll('.lender-logos');
