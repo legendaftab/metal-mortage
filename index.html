@@ -20,8 +20,8 @@
             <div class="dropdown me-3">
                 <button class="btn btn-outline-light dropdown-toggle" type="button" id="languageDropdown"
                     data-bs-toggle="dropdown" aria-expanded="false">
-                    <img src="https://www.gstatic.com/images/icons/material/system/1x/language_black_20dp.png"
-                        alt="Google" style="width: 20px; height: 20px; margin-right: 5px;" />
+                    <img src="https://cdn-teams-slug.flaticon.com/google.jpg" alt="Google"
+                        style="width: 20px; height: 20px; margin-right: 5px;" />
                     Select Language
                 </button>
                 <ul class="dropdown-menu" aria-labelledby="languageDropdown">
@@ -45,22 +45,28 @@
             <div class="collapse navbar-collapse" id="navbarContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Home</a>
+                        <a class="nav-link text-light" id="home" href="javascript:void(0);"
+                            onclick="showHomeSection()">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">About</a>
+                        <a class="nav-link text-light" id="about" href="javascript:void(0);"
+                            onclick="showAboutSection()">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Team <i class="fas fa-users"></i></a>
+                        <a class="nav-link text-light" href="javascript:void(0);" onclick="showTeamSection()">Team <i
+                                class="fas fa-users"></i></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Services</a>
+                        <a class="nav-link text-light" id="services" href="javascript:void(0);"
+                            onclick="showServicesSection()">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Video</a>
+                        <a class="nav-link text-light" id="video" href="javascript:void(0);"
+                            onclick="showVideoSection()">Video</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-light" href="#">Contact Me <i class="fas fa-envelope"></i></a>
+                        <a class="nav-link text-light" id="contact" href="javascript:void(0);"
+                            onclick="showContactInfo()">Contact Me <i class="fas fa-envelope"></i></a>
                     </li>
                 </ul>
                 <div class="d-flex">
@@ -120,14 +126,131 @@
                         38 Iannuzzi Street, Toronto, Ontario</p>
                 </div>
 
+
+                <!-- service section -->
+                <div id="servicesSection" class="content-section" style="display: none;">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>Purchase Mortgage</h4>
+                            <p>You need the help of a mortgage professional to make the right decisions.</p>
+                            <ul>
+                                <li>Home Purchase Advice & Services</li>
+                                <li>Shop all the Banks</li>
+                                <li>Lowest Rates</li>
+                                <li>Self-employed / New to Canada</li>
+                                <li>Lower your monthly payments</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Mortgage Renewals</h4>
+                            <p>Most homeowners simply sign the lenders renewal without shopping for the best rate and
+                                terms.</p>
+                            <ul>
+                                <li>We shop for you, no charge</li>
+                                <li>No cost switch program</li>
+                                <li>Canada’s best prepayment options</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h4>Mortgage Refinance</h4>
+                            <p>Mortgage refinance can prove beneficial in several ways.</p>
+                            <ul>
+                                <li>Get cash out for any purpose</li>
+                                <li>Consolidate high interest credit cards</li>
+                                <li>Lower your monthly payments</li>
+                                <li>Renovations and home improvements</li>
+                                <li>Programs for self-employed</li>
+                                <li>Canada’s best prepayment options</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Home Equity Loans</h4>
+                            <p>You need the help of a mortgage professional to make the right decisions.</p>
+                            <ul>
+                                <li>Many programs to help you</li>
+                                <li>Easy access to low interest loans</li>
+                                <li>Start a new business</li>
+                                <li>Renovations and home improvements</li>
+                                <li>Education, Invest for retirement</li>
+                                <li>Canada’s best prepayment options</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- video section -->
+                <div id="videoSection" class="content-section"
+                    style="display: none; padding: 20px; background-color: #f8f9fa; border-radius: 5px;">
+                    <div class="video-container"
+                        style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background-color: #000;">
+                        <iframe id="youtubeVideo" src=""
+                            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+
+                <!-- Team Section -->
+                <div id="teamSection" class="content-section"
+                    style="display: none; padding: 20px; background-color: #f8f9fa; border-radius: 5px;">
+                    <div class="row align-items-center">
+                        <div class="col-md-2">
+                            <img src="../metal-mortage/assets/mortage-web.png" alt="Daniel Char" class="img-fluid"
+                                style="max-width: 100%;">
+                        </div>
+                        <div class="col-md-10">
+                            <h4 style="color: #009fc8;">Daniel Char</h4>
+                            <p><strong style="color:#666;">Phone:</strong> 647.748.9010</p>
+                            <p><strong style="color:#666;">Email:</strong> <a href="mailto:daniel@metalmortgage.ca"
+                                    style="color: #009fc8;">Click Here</a></p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Home Section -->
+                <div id="homeSection" class="content-section"
+                    style="display: none; padding: 20px; background-color: #f8f9fa; border-radius: 5px;">
+                    <p>Welcome to Metal Mortgage</p>
+                    <p>
+                        Finding the right financing solution for your business can be a daunting task, especially if
+                        you've faced
+                        rejections from traditional banks. But fear not, because you're in the right place.
+                    </p>
+                    <p>
+                        At Metal Mortgage, we specialize in helping business owners like you navigate the complex world
+                        of mortgages.
+                        Whether you're looking to purchase your first property or refinance existing mortgages, our team
+                        is here to
+                        turn your dreams into reality.
+                    </p>
+                    <p>
+                        We understand the unique challenges you face, and we're committed to finding tailored solutions
+                        that suit your
+                        needs. With our extensive network of lenders and our expertise in mortgage brokering, we'll work
+                        tirelessly to
+                        secure the financing you deserve.
+                    </p>
+                    <p>
+                        Connect with us to book a Free Discovery call to help you finance your next home.
+                    </p>
+                    <p>
+                        Welcome aboard, let's unlock the doors to your financial success together!
+                    </p>
+                </div>
+
+                <!-- About Section -->
+                <div id="aboutSection"  style="display: none;">
+                </div>
             </div>
         </div>
     </div>
 
+
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-2">
-                <ul class="list-group">
+                <ul class="list-group" class="sticky-top">
                     <li class="list-group-item bg-dark">
                         <a href="javascript:void(0);" class="text-light text-decoration-none"
                             onclick="showCallbackForm()">ARRANGE A CALL BACK</a>
@@ -342,7 +465,9 @@
 
         <!-- Right Section: Verico and Links -->
         <div class="footer-right">
-            <p class="mb-2"><span class="d-flex justify-content-start align-items-center">Proud member of</span> <br><strong><img src="../metal-mortage/assets/Logo_Verico_Retina.png" alt=""></strong></p>
+            <p class="mb-2"><span class="d-flex justify-content-start align-items-center">Proud member of</span>
+                <br><strong><img src="../metal-mortage/assets/Logo_Verico_Retina.png" alt=""></strong>
+            </p>
             <div class="footer-links">
                 <a href="#" class="footer-link">Privacy Policy</a> |
                 <a href="#" class="footer-link">Politique de confidentialité</a>
@@ -356,7 +481,7 @@
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 <script src="./index.js"></script>
 

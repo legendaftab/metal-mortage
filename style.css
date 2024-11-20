@@ -462,3 +462,29 @@
       text-align: center;
     }
   }
+
+  /* check */
+  .content-section {
+    font-size: 16px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .content-section {
+    font-size: 16px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+
+  .video-container {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+
