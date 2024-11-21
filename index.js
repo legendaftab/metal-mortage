@@ -68,3 +68,27 @@ function showImages(dotNumber) {
     document.getElementById(`images-${dotNumber}`).classList.add('active');
     dots[dotNumber - 1].classList.add('active');
 }
+
+function openApplyNowPage() {
+    window.open('apply.html', '_blank');
+}
+
+function showApplicationForm() {
+    // Hide any other visible sections
+    document.getElementById('applicationForm').style.display = 'block';
+    window.scrollTo({
+        top: document.getElementById('applicationForm').offsetTop,
+        behavior: 'smooth'
+    });
+}
+
+
+function showApplicationForm() {
+    // Hide the expert section
+    const expertSection = document.querySelector('.expert-section');
+    expertSection.style.display = 'none';
+
+    // Show the application form
+    const applicationForm = document.getElementById('applicationForm');
+    applicationForm.style.display = 'block';
+}

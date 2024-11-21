@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header img {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header .license {
+    text-align: right;
+    font-size: 14px;
+    color: #666;
+}
+
+.header .logo img {
+    height: 70px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.contact-info {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .contact-info i {
+    margin-right: 8px; 
+    vertical-align: middle; 
+  }
+  
+  .contact-info strong {
+    margin-right: 10px;
+  }
+  
+  .contact-info i.fa-phone-alt {
+    margin-left: 10px; 
+  }
+
+  .expert-section {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.expert-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.expert-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.expert-content hr {
+    margin: 20px auto;
+    width: 80%;
+    border: 1px solid white;
+}
+
+.calculator-options {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.calculator-options span {
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.calculator-options span:hover {
+    background-color: white;
+    color: black;
+}
+
+.apply-button {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.apply-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: left;
+    border-top: 1px solid #ddd;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    color: #666;
+}
+
+.footer-content .member-info {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.footer-content strong {
+    color: #003366;
+    font-size: 1.1rem;
+}
+
+.footer-content .copyright {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+.verico-logo {
+    height: 40px; 
+    width: auto; 
+    vertical-align: middle; 
+}
+
+#applicationForm label {
+    color: #fff;
+    font-weight: bold;
+}
+
+#applicationForm input,
+#applicationForm select {
+    background-color: #222;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#applicationForm input:focus,
+#applicationForm select:focus {
+    outline: none;
+    border-color: #ff9800;
+    box-shadow: 0 0 5px rgba(255, 152, 0, 0.8);
+}
+
+.form-control:invalid {
+    border-color: red;
+  }
+  
+  .form-control:invalid ~ .invalid-feedback {
+    display: block;
+  }
+  
+  .invalid-feedback {
+    color: red;
+    display: none;
+    font-size: 0.875em;
+  }
+  
+
+
+
+  
